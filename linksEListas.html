@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <link rel="icon" href="./images/folder.png">
+    <style>
+        
+        /* Forma de comentar no CSS  */
+
+        .button-alert {
+            display: inline-block; /* Faz o link se comportar como um botão de bloco */
+            padding: 10px 20px; /* Espaçamento interno para parecer um botão */
+            font-size: 16px; /* Tamanho da fonte */
+            color: #fff; /* Cor do texto */
+            background-color: #007bff; /* Cor de fundo do botão */
+            border: none; /* Remove borda padrão */
+            border-radius: 5px; /* Bordas arredondadas */
+            text-decoration: none; /* Remove sublinado do link */
+            text-align: center; /* Centraliza o texto */
+            cursor: pointer; /* Mostra o curso de "mãozinha" ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Forma de comentar no HTML puro -->
+
+    <!-- Teste de botão estilizado -->   
+    <button onclick="alert('Olá, mundo!')" class="button-alert" id="id-da-ancora">
+        Clique aqui
+    </button>
+
+    <!-- Lista descritiva-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para estruturar páginas web.</dd>
+        <dd>Usado junto com CSS e JavaScript.</dd>
+        
+        <dt>CSS</dt>
+        <dd>Estiliza o layout das páginas web.</dd>
+    </dl>
+
+    <!-- Lista não ordenada -->
+    <ul>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ul>
+    
+    <ul style="list-style-type: circle;">
+        <li>Item com círculo</li>
+    </ul>
+    
+    <ul style="list-style-type: square;">
+        <li>Item com quadrado</li>
+    </ul>
+    
+    <ul style="list-style-type: none;"> <!-- Sem marcador -->
+        <li>Item sem marcador</li>
+    </ul>
+
+    <!-- Lista Ordenada padrão -->
+    <ol>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ol>
+
+    <ol type="I"> <!-- Numerais romanos maiúsculos -->
+        <li>Item I</li>
+        <li>Item II</li>
+        <li>Item III</li>
+    </ol>
+
+    <ol type="i"> <!-- Numerais romanos minúsculos -->
+        <li>Item I</li>
+        <li>Item II</li>
+        <li>Item III</li>
+    </ol>
+      
+    <ol type="A"> <!-- Letras maiúsculas -->
+        <li>Item a</li>
+        <li>Item b</li>
+        <li>Item c</li>
+    </ol>
+
+    <ol type="a"> <!-- Letras minúsculas -->
+        <li>Item a</li>
+        <li>Item b</li>
+        <li>Item c</li>
+    </ol>
+      
+    <ol type="1" start="3"> <!-- Começar do número 3 -->
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <!-- Redireciona o usuário para uma parte específica dentro da mesma página-->
+
+    <a href="#id-da-ancora">Voltar para o botão no topo</a>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de HTML Semântico</title>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Blog de Tecnologia</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção principal com um artigo -->
+    <main>
+        <section id="artigos">
+            <article>
+                <header>
+                    <h2>Os Benefícios do HTML Semântico</h2>
+                    <p>Publicado em <time datetime="2024-09-12">12 de Setembro de 2024</time> por <a href="#contato">Pedro Feld</a></p>
+                    <!-- esse "time" é importante para SEO -->
+                </header>
+                <p>HTML semântico é a prática de usar tags de HTML que têm significado em relação ao conteúdo que está sendo marcado.</p>
+                <p>Isso melhora a acessibilidade e SEO, facilitando a compreensão do conteúdo por leitores e mecanismos de busca.</p>
+            </article>
+
+            <article>
+                <header>
+                    <h2>Como CSS e JavaScript Interagem com HTML</h2>
+                    <p>Publicado em <time datetime="2024-09-10">10 de Setembro de 2024</time> por <a href="#contato">Pedro Feld</a></p>
+                </header>
+                <p>O CSS é responsável pela apresentação visual do HTML, enquanto o JavaScript lida com interatividade e comportamentos dinâmicos.</p>
+            </article>
+        </section>
+
+    </main>
+ 
+    <!-- Seção Sobre -->
+    <aside id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos um desenvolvedores de software e apaixonados por tecnologia.</p>
+    </aside>
+
+     <!-- Exemplo div -->
+     <div style="background-color: black; color: white; padding: 20px;">
+        <h1>Título</h1>
+        <p>Este é um paragrafo.</p>
+    </div>
+
+    <!-- Exemplo span -->
+    <p>Este é uma <span style="border: 1px solid black;">paragrafo</span> de exemplo.</p>
+
+
+    <br/>
+    <br/>
+    <br/>
+
+    <!-- Exemplos de iframe -->
+    <h2>Exemplo de iframe</h2>
+    <!-- <iframe src="https://growdev.com.br" title="Página da Growdev" width="900" height="400"></iframe> -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7ozXXYrUxNVEFG2T6S6rbM/video?utm_source=generator&theme=0" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <!-- Rodapé com informações de contato -->
+    <footer>
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <address>
+                Email: <a href="mailto:pedro.gael.feld@gmail.com">pedro.gael.feld@gmail.com</a><br>
+                Telefone: <a href="tel:+555198600-8003">(51) 98600-8003</a>
+                WhatsApp: <a href="https://wa.me/5551986008003">(51) 98600-8003</a>
+
+            </address>
+        </section>
+        <p>&copy; 2025 Pedro's company</p>
+    </footer>
+</body>
+</html>

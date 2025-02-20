@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Tabelas HTML</title>
+</head>
+<body>
+
+  <!-- 1. Tabela simples sem bordas -->
+  <h2>Tabela Simples</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Função</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ana</td>
+        <td>Desenvolvedora Frontend</td>
+      </tr>
+      <tr>
+        <td>João</td>
+        <td>Engenheiro de Software</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 2. Tabela com border=1 -->
+  <h2>Tabela com Borda</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Função</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ana</td>
+        <td>Desenvolvedora Frontend</td>
+      </tr>
+      <tr>
+        <td>João</td>
+        <td>Engenheiro de Software</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 3. Tabela com width e height diferentes em células específicas -->
+  <h2>Tabela com Largura e Altura Específicas</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Função</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="width: 200px; height: 50px;">Ana</td>
+        <td>Desenvolvedora Frontend</td>
+      </tr>
+      <tr>
+        <td>João</td>
+        <td style="height: 100px">Engenheiro de Software</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 4. Tabela com colspan e rowspan -->
+  <h2>Tabela com Colspan e Rowspan</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th colspan="2">Funções Relacionadas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Ana</td>
+        <td>Frontend</td>
+        <td>Backend</td>
+      </tr>
+      <tr>
+        <td colspan="2">Engenheira Fullstack</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Tabela sem borda dupla-->
+
+  <h2>Tabela Pedro - bordas finas</h2>
+  <table border="1" style="border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Relação</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pedro</td>
+            <td>Sujeito</td>
+        </tr>
+        <tr>
+            <td>Gabrielle</td>
+            <td>Irmã</td>
+        </tr>
+        <tr>
+            <td>Anelise</td>
+            <td>Mãe</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>Pai</td>
+        </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

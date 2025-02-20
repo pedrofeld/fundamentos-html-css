@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Formulário de Exemplo</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <fieldset> <!--cria uma borda ao redor do formulário-->
+            <legend>Exemplo</legend> <!-- coloca um título no meio da borda do formulário-->
+            <!-- Input text -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+            <!-- Input email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
+
+            <!-- Input number -->
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" step="1" min="1" max="100" required><br><br>
+
+            <!-- Input password -->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+
+            <!-- Input checkbox - permite selecionar várias opções-->
+            <label for="futras">Come quais frutas:</label>
+            <input type="checkbox" id="banana" name="banana" value="banana">banana
+            <input type="checkbox" id="abacaxi" name="abacaxi" value="abacaxi">abacaxi
+            <input type="checkbox" id="maca" name="maca" value="maca">maçã
+
+            <br><br>
+            <!-- Input radio - permitido selecionar 1 opção só -->
+            <label>Gênero:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+            <label for="feminino">Feminino</label><br><br>
+
+            <!-- Input file -- restrito os tipos de arquivo (extensões) aceitos -->
+            <label for="arquivo">Envie seu arquivo:</label>
+            <input type="file" accept=".pdf, .doc, .docx, .xlsx" id="arquivo" name="arquivo" required><br><br>
+
+            <!-- Input hidden - token para validação oculta, utilizações diversas -->
+            <input type="hidden" name="token" value="123456"><br>
+
+            <!-- Input date -->
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+            <!-- Input color -->
+            <label for="cor">Escolha uma cor favorita:</label>
+            <input type="color" id="cor" name="cor" value="#000000"><br><br>
+
+            <!-- Textarea -->
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Digite seu comentário"></textarea><br><br>
+
+            <!-- Select -->
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="" disabled>Selecione...</option> <!--mantém a opção de selecionar visível, mas desabilitada-->
+                <option value="brasil" selected>Brasil</option> <!-- nasce com a opção brasil marcada -->
+                <option value="eua">Estados Unidos</option>
+                <option value="portugal">Portugal</option>
+            </select><br><br>
+
+            <!-- Input readonly -->
+            <label for="codigo">Código (somente leitura):</label>
+            <input type="text" id="codigo" name="codigo" value="12345" readonly><br><br>
+
+            <!-- Input disabled -->
+            <label for="desabilitado">Campo desabilitado:</label>
+            <input type="text" id="desabilitado" name="desabilitado" value="Desabilitado" disabled><br><br>
+
+            <!-- Input submit -->
+            <input type="submit" value="Enviar"><br><br>
+
+            <!-- Input button -->
+            <button type="button" onclick="alert('Botão clicado!')">Clique aqui</button>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

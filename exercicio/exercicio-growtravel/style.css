@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3c63b5;
+    display: flex;
+    flex: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+header > p {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header p:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.botao-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer; /* mostra que é clicável */ 
+    z-index: 1000; /* garante que fique em cima dos outros elementos */
+}
+
+.botao-flutuante img {
+    width: 100%; /* ajusta o tamanho do botão de acordo com o tamanho definido na classe */
+    height: auto; /* mantém a proporção */
+}
+
+img {
+    width: 40%;
+}
+
+section {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 48px;
+}
+
+section#home{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; /* alinhar no eixo horizontal */
+    align-items: center; /* vertical */
+}
+
+section#quemSomos{
+    display: flex;
+}
+
+section#quemSomos > div {
+    align-items: center;
+    text-align: left;
+}
+
+section#quemSomos > img {
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 12px 0;
+}
+
+button.botao-padrao {
+    padding: 18px 48px;
+    border-radius: 48px;
+    border: 1px solid #3c63b5;
+    background-color: #3c63b5;
+    color: white;
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid #c8c5c5;
+}
+
+footer {
+    padding: 36px;
+    text-align: center;
+}
+
+footer > p {
+    color: grey;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        padding: 24px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    button.botao-padrao {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/*telas menores que 480px (smartphones)*/
+@media (max-width: 480px) {
+    section#home {
+        flex-direction: column; /* Coloca a imagem acima do texto */
+    }
+
+    section#quemSomos {
+        flex-direction: column; /* Coloca a imagem acima do texto */
+    }
+
+    section#quemSomos > img, section#home > img {
+        width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+    }
+
+    section#quemSomos > div {
+        text-align: center; /* Centraliza o texto */
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button.botao-padrao {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 16px;
+    }
+}
+
+/* telas maiores que 12000px*/
+@media (min-width: 1200px) {
+    section {
+        max-width: 1000px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    button.botao-padrao {
+        padding: 20px 40px;
+        font-size: 25px;
+    }
+
+    section#quemSomos {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,194 @@
+/* @font-face {
+    font-family: myFont;
+    src: url(font.woff);
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Ubuntu&display=swap");
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: right;
+}
+
+/*
+# puxa id
+. puxa classe
+
+h1 + p puxa o primeiro p depois do h1
+
+h1 ~ p puxa todos os p depois do h1
+
+section.minhaClasse > p puxa todos os filhos diretos, todos os p dentro da section formacao
+
+section.contato a {} puxa todos os a dentro do da section contato
+
+input[disabled] puxa os elemento que possuem o atributp esécificado (disable)
+
+button:hover quando o mouse passa sobre o elemento
+
+--------------- outras tags---------------
+
+cursor: not-allowed -> vai mostar que não pode ser clicado (símbolo de bloqueio)
+accent-colo: red -> cor dos checkbox / seleções
+
+*/
+
+/* ==========================
+   1. POSITION (relative, absolute, fixed, sticky)
+   ========================== 
+*/
+
+/* Relative: Move o elemento a partir de sua posição original na página */
+.relative-box {
+    position: relative;
+    top: 20px;  /* Move 20px para baixo em relação à posição original */
+    left: 10px; /* Move 10px para a direita */
+}
+  
+/* Absolute: Remove o elemento do fluxo normal e o posiciona em relação ao elemento pai mais próximo com position relative */
+.absolute-box {
+    position: absolute;
+    top: 50px; /* 50px do topo do elemento pai */
+    left: 50px; /* 50px da esquerda do elemento pai */
+}
+  
+/* Fixed: Fixa o elemento na tela, independente do scroll da página */
+.fixed-box {
+    position: fixed;
+    top: 0; /* Sempre no topo da tela */
+    right: 0; /* Sempre na direita da tela */
+}
+  
+/* Sticky: O elemento se comporta como relative até alcançar um ponto fixo na rolagem, onde se torna fixo */
+.sticky-box {
+    position: sticky;
+    top: 0; /* Fica fixo no topo da página ao rolar */
+}
+  
+/* ==========================
+     2. OVERFLOW (visible, hidden, scroll, auto)
+     ========================== 
+*/
+  
+/* visible: O conteúdo que ultrapassar os limites do elemento ainda será visível */
+.overflow-visible {
+    overflow: visible; /* Mesmo se o texto ou imagem forem maiores que o elemento, eles continuam aparecendo */
+}
+  
+/* hidden: O conteúdo que ultrapassar os limites será cortado e não poderá ser visto */
+.overflow-hidden {
+    overflow: hidden; /* Tudo que ultrapassar os limites do elemento será ocultado */
+}
+  
+/* scroll: Sempre adiciona barras de rolagem, independentemente da necessidade */
+.overflow-scroll {
+    overflow: scroll; /* Se o conteúdo for maior que o espaço disponível, o usuário pode rolar para ver o restante */
+}
+  
+/* auto: Adiciona barras de rolagem apenas se necessário */
+.overflow-auto {
+    overflow: auto; /* Se o conteúdo ultrapassar o limite, aparecem barras de rolagem automaticamente */
+}
+  
+/* ==========================
+     3. DISPLAY
+     ========================== 
+*/
+  
+/* block: Ocupa toda a largura disponível, criando uma quebra de linha antes e depois */
+.block {
+    display: block;
+}
+  
+/* inline: Ocupa apenas o espaço necessário e não permite definir largura e altura */
+.inline {
+    display: inline;
+}
+  
+/* inline-block: Como inline, mas permite definir largura e altura */
+.inline-block {
+    display: inline-block;
+}
+  
+/* flex: Ativa o Flexbox, permitindo alinhar itens de forma flexível */
+.flex {
+    display: flex;
+}
+  
+/* grid: Ativa o Grid Layout, permitindo dividir o espaço em colunas e linhas */
+.grid {
+    display: grid;
+}
+  
+/* none: Remove o elemento da página (não ocupa espaço) */
+.none {
+    display: none;
+}
+  
+/* ==========================
+     4. FLEXBOX
+     ========================== 
+*/
+  
+.flex-container {
+    display: flex;
+    flex-direction: row; /* Itens ficam lado a lado (horizontalmente) */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+  
+/* ==========================
+     5. GRID
+     ========================== 
+*/
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Cria 2 colunas: a primeira ocupa 1 parte, a segunda 2 partes */
+    grid-template-rows: auto auto; /* Cria 2 linhas com altura automática */
+}
+  
+/* ==========================
+     6. PSEUDO-ELEMENTOS
+     ========================== 
+*/
+  
+/* ::before adiciona um conteúdo antes do elemento */
+h1::before {
+    content: "🔥 ";
+}
+  
+/* ::after adiciona um conteúdo depois do elemento */
+h1::after {
+    content: " 🔥";
+}
+  
+/* ::first-letter estiliza apenas a primeira letra do texto */
+p::first-letter {
+    font-size: 2em;
+    color: red;
+}
+  
+/* ::first-line estiliza apenas a primeira linha de um texto */
+p::first-line {
+    font-weight: bold;
+}
+  
+/* ==========================
+     7. MEDIA QUERIES (RESPONSIVIDADE)
+     ========================== 
+*/
+  
+/* Define estilos específicos para telas menores que 600px */
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue; /* Altera o fundo da página em telas pequenas */
+    }
+}
