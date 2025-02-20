@@ -10,17 +10,25 @@
 
 <body>
     <header>
-        <p>Quem Somos</p>
-        <p>Serviços</p>
-        <p>Planos</p>
-        <p>Contato</p>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#quemSomos">Quem Somos</a>
+                </li>
+                <li>
+                    <a href="#">Serviços</a>
+                </li>
+                <li>
+                    <a href="#planos">Planos</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <a href="https://wa.me/5551986008003" class="botao-flutuante">
-            <img src="./images/wppicon.png" alt="ícone do whatsapp, pressione para abrir a conversa no whatsapp">
-        </a>
-
         <section id="home">
             <img src="./images/home.svg" alt="Buscar viagens pelo mundo">
 
@@ -29,9 +37,8 @@
                 <p>O melhor serviço para você!</p>
                 <button class="botao-padrao">Saiba Mais!</button>
             </div>
-        </section>
 
-        <hr>
+        </section>
 
         <section id="quemSomos">
             <img src="./images/aeroporto.svg" alt="Aeroporto">
@@ -39,27 +46,89 @@
             <div>
                 <h2>Quem Somos</h2>
                 <p>
-                    Somos apaixonados por criar experiências de viagem inesquecíveis. Nossa agência de turismo é formada por
+                    Somos apaixonados por criar experiências de viagem inesquecíveis. Nossa agência de turismo é formada
+                    por
                     uma equipe
                     experiente e dedicada, que busca transformar seus sonhos de viagem em realidade.
                 </p>
                 <p>
                     Acreditamos que viajar é mais do que
-                    apenas conhecer novos lugares, é uma oportunidade de viver novas aventuras e criar memórias duradouras.
+                    apenas conhecer novos lugares, é uma oportunidade de viver novas aventuras e criar memórias
+                    duradouras.
                     Por isso,
-                    oferecemos um atendimento personalizado, com roteiros exclusivos e serviços de alta qualidade, para que
+                    oferecemos um atendimento personalizado, com roteiros exclusivos e serviços de alta qualidade, para
+                    que
                     você possa
                     desfrutar de cada momento da sua viagem.
                 </p>
             </div>
         </section>
 
-        <hr>
+        <section id="planos">
+            <h2>Planos</h2>
+
+
+            <div id="container-tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Plano 1</th>
+                            <th>Plano 2</th>
+                            <th>Plano 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Suporte 24h</th>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <th>Serviços de quarto</th>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <th>Guia turístico</th>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <th>Roteiro de trilhas</th>
+                            <td>❌</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <th>Serviço personalizado</th>
+                            <td>❌</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <th>Área VIP</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✅</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; Copyright 2024.</p>
     </footer>
+
+    <a href="https://wa.me/5551999999999" title="Entre em contato" target="_blank"
+        id="botao-flutuante">
+        <img src="./images/wppicon.png" alt="Icone Whatsapp">
+    </a>
 </body>
 
 </html>
